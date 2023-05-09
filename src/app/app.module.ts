@@ -13,7 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
@@ -63,7 +63,8 @@ import { FormularioComponent } from './components/formulario/formulario.componen
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({}) 
+    NgCircleProgressModule.forRoot({}),
+    ReactiveFormsModule 
    ],
   providers: [
     interceptorProvider

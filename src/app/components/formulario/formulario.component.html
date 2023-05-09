@@ -9,27 +9,25 @@
 </div>
 
 <div class="centrar">
-<form  >
-  <!-- action="https://formsubmit.co/gerardocornalo@gmail.com" method="POST" -->
+<form  [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)" >
+  
    
     <div class=" imput-group">
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name" placeholder="Nombre">
-
-    <label for="phone">Telefono:</label>
-    <input type="tel" id="phone" name="phone" placeholder="Telefono">
-
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" placeholder="Email">
-
-    <label for="message">Mensaje:</label>
-    <textarea id="message" name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+    <label for="fullname">Nombre:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Nombre" formControlName="Fullname">
 
     
 
-    <input class="btn" type="submit" value="Enviar">
-     <input type="hidden" name="_next" value="http://localhost:4200/" >
-     <input type="hidden" name="_captcha" value="false">
+    <label for="Email">Correo electrónico:</label>
+    <input type="email" id="Email" name="Email" placeholder="Email" formControlName="Email" >
+
+    <label for="Comment">Mensaje:</label>
+    <textarea id="Comment" name="Comment" cols="30" rows="5" placeholder="Mensaje" formControlName="Comment"></textarea>
+
+    
+    
+    <input class="btn"  type="submit" value="Enviar">
+    
     </div>
   </form>
 </div>
