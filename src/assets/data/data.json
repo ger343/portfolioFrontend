@@ -1,0 +1,72 @@
+{
+  "name": "GERARDO CORNALO",
+  "backImage": "/assets/Banner programacion.png",
+  "image": "/assets/frente1.jpeg",
+  "position1": "Full Stack Developer Junior",
+  "position2": "Técnico Electromecánico",
+  "position3": "Maestro Mayor de Obras",
+
+  "ubication": "Concordia, Entre Ríos (Argentina) ",
+  "aboutTitle": "Bienvenidos, Gracias por su visita",
+  "about": " Soy un desarrollador Full Stack con habilidades en varias herramientas y conocimientos en metodologías ágiles, en particular Scrum. Me considero una persona intuitiva, sociable y adaptable a los cambios, con una pasión por ayudar a crear experiencias en línea atractivas e interactivas",
+  "experience": [
+      {
+          "position": "Tecnico ",
+          "company": "HS, Informatica",
+          "img": "/assets/hs logo.jpeg",
+          "mode": "",
+          "start": "2021",
+          "end": "actualidad",
+          "timeelapsed": ""
+      },
+      {
+          "position": "Tecnico ",
+          "company": "NIC SA",
+          "img": "/assets/nic logo.jpg",
+          "mode": "",
+          "start": "2006",
+          "end": "2012",
+          "timeelapsed": ""
+      }
+  ],
+  "education": [
+      {
+          "school": "Argentina Programa",
+          "title": "Full Stack Developer",
+          "img": "/assets/logo_Arg_Prog.jpg",
+          "end": "2023"
+      },
+      {
+          "school": "EETP Nº 467 Ovidio Lagos",
+          "title": "Maestro Mayor de Obras",
+          "img": "/assets/img/escuela2.jpeg",
+          "end": "2011"
+      },
+      {
+          "school": "EET N°1 Brig Gral Pascual Echagüe",
+          "title": "Técnico Electromecánico",
+          "img": "/assets/img/secundaria.png",
+          "end": "2001"
+      }
+  ],
+  "skill": [
+      {
+          "detail": "Resolución de problemas",
+          "percentage": "width: 85%"
+      },
+      {
+          "detail": "Diseño de sistemas",
+          "percentage": "width: 65%"
+      }
+  ],
+  "projects": [
+      {
+          "title": "e-Farmacia",
+          "description": "Desarrollamos un sitio web de comercio electrónico FrontEnd basado en Angular de alto tráfico con diseño innovador basado en UIX. Totalmente integrado con los sistemas CRM y ERP internos."
+      },
+      {
+          "title1": "Sistema de Monitoreo",
+          "description": "Desarrollamos un BackEnd basado en API Rest con la técnologia Spring Boot para proveer datos de monitoreo a aplicaciones distribuidas, también el desarrollo de interface entre sistemas de gestión para automatizar procesos."
+      }
+  ]
+}

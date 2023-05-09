@@ -1,0 +1,13 @@
+.alto{
+    width:100%;
+    height: 500px;
+    object-fit: cover; 
+    border-radius: 20px;
+    
+}
+
+.centrado{
+  
+justify-content: center;
+align-items: center;
+}

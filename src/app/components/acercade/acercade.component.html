@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="seccion">
+    <div class="row g-0">
+      <div class="col-md-12">
+      </div>
+      <div class="card-body txt">
+        <h2 class="  display-3 text-center">{{persona.presentacion}}</h2>
+      </div>
+    </div>
+    <h2 class="card-text  text-center ">{{persona.acercaDe}}</h2>
+    <div class="col-md-3">
+      <button class="btn btn-outline-warning btn-outline-info btn-floating m-1"
+        routerLink="/editacercade/{{persona.id}}" *ngIf="isLogged">
+        <i class="bi bi-pencil-fill"></i></button>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>

@@ -1,0 +1,43 @@
+<div class="container ">
+    <div class="jumbotron">
+        <h1 class="display-3 text-center">EDUCACION</h1>
+        <p class="text-center"></p>
+        <hr>
+        <div class="col-md-1">
+            <button type="button" class="btn btn-outline-warning btn-outline-info btn-floating m-1"
+                routerLink="/nuevaedu" *ngIf="isLogged">
+                <img class="bi" src="/assets/img/iconos/agregar.svg" />
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <ul>
+        <li *ngFor="let Educacion of educacion">
+
+            <div class="row justify-content-between contenido">
+                <div class="col-md-6 mt-4 ">
+                    <img class="col logo " src={{Educacion.imagenE}} alt="logo secundaria">
+                    <h4>{{Educacion.nombreE}}</h4>
+                    <h6>{{Educacion.fechaFinE}} </h6>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <h4>{{Educacion.descripcionE}}</h4>
+
+                </div>
+
+                <div class="col-md-3">
+                    <button class="btn btn-outline-warning btn-outline-info btn-floating m-1"
+                        routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged">
+                        <i class="bi bi-pencil-fill"></i></button>
+                    <button class="btn btn-outline-warning btn-outline-info btn-floating m-1"
+                        (click)="delete(Educacion.id)" *ngIf="isLogged">
+                        <i class="bi bi-trash-fill"></i> </button>
+                </div>
+
+            </div>
+        </li>
+    </ul>
+</div>

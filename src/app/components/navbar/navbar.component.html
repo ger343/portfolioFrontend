@@ -1,0 +1,61 @@
+<nav class=" navbar  navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid ">
+
+        <!-- icono o nombre -->
+        <a class="navbar-brand" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">
+            <img src="/assets/Logo_Argentina_Programa.png" alt="Logo" width="180"
+                class="d-inline-block align-text-center">
+        </a>
+
+        <!-- boton del menu -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- elementos del menu colapsable -->
+
+        <div class="collapse navbar-collapse" id="menu">
+            <hr class="d-md-none text-white-50">
+
+            <!-- enlaces redes sociales -->
+
+            <ul class=" redes btn  navbar-nav ms-auto flex-row flex-wrap text-light">
+
+                <li class="btn-outline-warning nav-item col-6 col-md-auto p-3">
+                    <a class=" navbar-brand" href="https://twitter.com/?lang=es">
+                        <i class=" bi bi-twitter"></i>
+                        <i class="fa-brands fa-twitter fa-lg"></i>
+                    </a>
+                    <small class="d-md-none ms-2">Twitter</small>
+
+                </li>
+
+                <li class="btn-outline-warning nav-item col-6 col-md-auto p-3">
+                    <a class="navbar-brand" href="https://github.com/ger343">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <small class="d-md-none ms-2">GitHub</small>
+                </li>
+
+                <li class="btn-outline-warning nav-item col-6 col-md-auto p-3">
+                    <a class="navbar-brand" href="https://www.linkedin.com/in/gerardo-cornalo-97bb38245/">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <small class="d-md-none ms-2">linkedin</small>
+                </li>
+
+                <li class="btn-outline-warning nav-item col-6 col-md-auto p-3">
+                    <button type="button" class="btn btn-outline-warning  d-md-inline-block navbar-brand"
+                        (click)="login()" *ngIf="!isLogged">login</button>
+                    <button type="button" class="btn btn-outline-warning  d-md-inline-block navbar-brand"
+                        (click)="onLogOut()" *ngIf="isLogged">logout</button>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+</nav>

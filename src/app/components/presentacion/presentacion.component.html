@@ -1,0 +1,49 @@
+<!-- sección del Banner -->
+<div class="flex-row">
+
+
+  <img class="  banner" src="https://i.pinimg.com/originals/e9/d4/e5/e9d4e5dd1c2ccc04177e4d4a86d1a8be.png" alt="banner"
+    class="w-100 img-fluid">
+  <div class="col-md-4" id="perfil">
+
+    <img [src]="persona.img" alt="foto-perfil" class="fotoperfil rounded-circle img-fluid col-7">
+    <h1 class="nombre name">{{persona.nombre}} {{persona.apellido}} </h1>
+
+    <h4 class="name lc-typed-text"><!--{{persona.descripcion}}--></h4>
+    <br>
+    <h6 class="name">{{persona.ubicacion }}
+      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        informacion de contacto
+      </button>
+    </h6>
+
+    <div class="col-md-1">
+      <div class="col-md-3">
+        <button class="btn btn-outline-warning btn-outline-info btn-floating m-1" routerLink="/editpresentacion/:id"
+          *ngIf="isLogged">
+          <i class="bi bi-pencil-fill"></i></button>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Informacion de Contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Email: gerardocornalo@gmail.com</p>
+          <p>Telefono: +54 345 4 202277</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>

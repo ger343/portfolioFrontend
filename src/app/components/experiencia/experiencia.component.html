@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3 text-center">EXPERIENCIA</h1>
+        <p class="text-center"></p>
+        <hr>
+        <div class="col-md-1">
+            <button type="button" class="btn btn-outline-warning btn-outline-info btn-floating m-1"
+                routerLink="/nuevaexp" *ngIf="isLogged">
+                <img class="bi" src="/assets/img/iconos/agregar.svg" />
+            </button>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <ul>
+        <li *ngFor="let Experiencia of expe">
+
+            <div class="row justify-content-between contenido">
+                <div class="col-md-6 mt-4 ">
+                    <img class="col logo" src={{Experiencia.imagenE}} alt="logo hs">
+                    <h4>{{Experiencia.nombreE}}</h4>
+                    <h6>{{Experiencia.fechaFinE}}</h6>
+                </div>
+                <div class="col-md-3 mt-4 ">
+
+                    <h4>{{Experiencia.descripcionE}}</h4>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-outline-warning btn-outline-info btn-floating m-1"
+                        routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
+                        <i class="bi bi-pencil-fill"></i></button>
+                    <button class="btn btn-outline-warning btn-outline-info btn-floating m-1"
+                        (click)="delete(Experiencia.id)" *ngIf="isLogged">
+                        <i class="bi bi-trash-fill"></i> </button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
